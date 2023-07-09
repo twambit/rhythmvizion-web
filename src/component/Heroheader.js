@@ -34,6 +34,10 @@ export const Hero = () => {
 src="https://www.youtube.com/embed/QZuQ_ERpqss" allowFullScreen
     >
 </iframe>
+              <iframe width="420" height="315"
+src="https://www.youtube.com/embed/QZuQ_ERpqss" allowFullScreen
+    >
+</iframe>
               <img
                 src={"./images/Glasseswb.png"}
                 alt=""
