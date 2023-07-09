@@ -12,8 +12,7 @@ export const Hero = () => {
                 <span className="hero-title-span">ACTIVATED GLASSES</span>
               </h1>
               <p className="hero-paragraph">
-                The world's first sound activated smart glasses for the
-                Metaverse.
+                The world's first sound activated glasses
               </p>
               <div className="hero-cta">
                 {/* <a className="social-head" href="#">
