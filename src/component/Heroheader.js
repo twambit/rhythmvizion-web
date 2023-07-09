@@ -31,8 +31,7 @@ export const Hero = () => {
             </div>
             <div className="hero-figure">
                 <iframe width="420" height="315"
-src="https://www.youtube.com/embed/QZuQ_ERpqss"
-  allowfullscreen
+src="https://www.youtube.com/embed/QZuQ_ERpqss" allowFullScreen
     >
 </iframe>
               <img
