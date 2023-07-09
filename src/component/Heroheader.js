@@ -31,6 +31,7 @@ export const Hero = () => {
               </div>
             </div>
             <div className="hero-figure">
+                <h1>Hello World Test</h1>
               <img
                 src={"./images/Glasseswb.png"}
                 alt=""
