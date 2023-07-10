@@ -32,7 +32,7 @@ src="https://www.youtube.com/embed/lWe_Bl0k6TA" allowFullScreen
                 The world's first sound activated glasses
               </p>
               <div className="hero-cta">
-                {/* <a className="social-head" href="#">
+                {/* <a className="social-head" href="https://www.instagram.com/rhythmvizion/">
                   <i className="fa fa-facebook-square" aria-hidden="true"></i>
                 </a> */}
                 <a className="social-head" href="#">
