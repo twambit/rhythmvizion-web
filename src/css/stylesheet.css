@@ -1551,7 +1551,7 @@ label {
 /* Hero Header */
 
 .main_block {
-  display: block;
+  display: inline-block;
   width: 100%;
 }
 
