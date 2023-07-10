@@ -65,8 +65,8 @@ export const Contactus = () => {
           </li> */}
         </ul>
         {/* Section2 */}
- {/*
-        <ul className="flex-container-contact space-between">
+ 
+       {/* <ul className="flex-container-contact space-between">
           <li className="flex-item contact-us">
             {showcontact ? (
               <form id="form-contact" onSubmit={sendEmail}>
@@ -145,10 +145,10 @@ export const Contactus = () => {
               id="gmap_canvas"
               src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Rm.%2013B%20Xusheng%20Bldg.,%20Tongcheng%20Road,%20Baoan%20Ave.,%20Baoan%20District,%20Shenzhen,%20Guangdong,%20China%20(518102)%20,%20Shenzhen,%20Guangdong%20China+(Rm.%2013B%20Xusheng%20Bldg.,%20Tongcheng%20Road,%20Baoan%20Ave.,%20Baoan%20District,%20Shenzhen,%20Guangdong,%20China%20(518102)%20,%20Shenzhen,%20Guangdong,%20518102,%20China)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             ></iframe>
-            {/* <a href='https://maps-generator.com/'>Maps Generator</a> */}
+            <a href='https://maps-generator.com/'>Maps Generator</a> 
           </li>
-        </ul>
-            */}
+        </ul> */}
+           
       </div>
     </div>
   );
