@@ -47,7 +47,7 @@ export const Contactus = () => {
             <br />
             <b>Phone Number</b>
             <br />
-            <span>+1 702-723-7533</span>
+            <span>+1 917-574-4910</span>
           </li> 
           <li className="flex-item">
             <i className="fa fa-envelope-o" aria-hidden="true"></i>
