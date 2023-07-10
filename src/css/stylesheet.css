@@ -1550,11 +1550,17 @@ label {
 
 /* Hero Header */
 
+.main_block {
+  display: block;
+  width: 100%;
+}
+
 .vidclassleft {
 float: left;
 }
+
 .vidclassright {
-float: right;
+float: left;
 }
 
 
