@@ -34,20 +34,21 @@ export const Contactus = () => {
       <div className="container" id="conatct-us">
         <h3 className="contact-h3">LET'S CONNECT</h3>
         <ul className="flex-container-contact space-between">
-          <li className="flex-item">
+         {/*  <li className="flex-item">
             <i className="fa fa-map-marker" aria-hidden="true"></i>
             <br />
             <b>Locations</b>
             <br />
             <span>Americas, Europe, Africa, Asia</span>
           </li>
-          {/* <li className="flex-item">
+          */}
+          <li className="flex-item">
             <i className="fa fa-phone" aria-hidden="true"></i>
             <br />
             <b>Phone Number</b>
             <br />
             <span>+1 702-723-7533</span>
-          </li> */}
+          </li> 
           <li className="flex-item">
             <i className="fa fa-envelope-o" aria-hidden="true"></i>
             <br />
@@ -64,6 +65,7 @@ export const Contactus = () => {
           </li> */}
         </ul>
         {/* Section2 */}
+ {/*
         <ul className="flex-container-contact space-between">
           <li className="flex-item contact-us">
             {showcontact ? (
@@ -146,6 +148,7 @@ export const Contactus = () => {
             {/* <a href='https://maps-generator.com/'>Maps Generator</a> */}
           </li>
         </ul>
+            */}
       </div>
     </div>
   );
