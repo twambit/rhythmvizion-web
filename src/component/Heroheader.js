@@ -36,8 +36,6 @@ export const Hero = () => {
 src="https://www.youtube.com/embed/QZuQ_ERpqss" allowFullScreen align="left"
     >
 </iframe>
-  </div>
-    <div className="vidclassright">
               <iframe width="420" height="315"
 src="https://www.youtube.com/embed/lWe_Bl0k6TA" allowFullScreen align="right"
     >
