@@ -1552,7 +1552,7 @@ label {
 
 .main_block {
   display: inline-block;
-  width: 100%;
+  min-width: 100%;
 }
 
 .vidclassleft {
