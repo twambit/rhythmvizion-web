@@ -41,14 +41,14 @@ export const Contactus = () => {
             <br />
             <span>Americas, Europe, Africa, Asia</span>
           </li>
-          */}
+         
           <li className="flex-item">
             <i className="fa fa-phone" aria-hidden="true"></i>
             <br />
             <b>Phone Number</b>
             <br />
             <span>+1 917-574-4910</span>
-          </li> 
+          </li>  */}
           <li className="flex-item">
             <i className="fa fa-envelope-o" aria-hidden="true"></i>
             <br />
