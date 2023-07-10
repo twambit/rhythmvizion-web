@@ -38,7 +38,7 @@ src="https://www.youtube.com/embed/QZuQ_ERpqss" allowFullScreen
   
 </iframe>
     </span>
-    <span className="vidclassleft">
+    <span className="vidclassleft" />
               <iframe width="400" height="315"
 src="https://www.youtube.com/embed/lWe_Bl0k6TA" allowFullScreen
     >
