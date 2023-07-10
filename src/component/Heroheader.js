@@ -29,7 +29,7 @@ export const Hero = () => {
                 </a> */}
               </div>
             </div>
-            <div className="hero-figure">
+         
                 <div className="main_block">
                 <span className="vidclassleft">
                 <iframe width="100%" height="315"
@@ -45,6 +45,7 @@ src="https://www.youtube.com/embed/lWe_Bl0k6TA" allowFullScreen
 </iframe>
   </span>
   </div>
+     <div className="hero-figure">
               <img
 
                 src={"./images/Glasseswb.png"}
