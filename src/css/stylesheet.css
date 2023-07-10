@@ -1550,11 +1550,14 @@ label {
 
 /* Hero Header */
 
-.vidclass {
-     display: table;
-    max-width: 100%;
+.vidclassleft {
 float: left;
 }
+.vidclassright {
+float: right;
+}
+
+
 .hero {
     text-align: center;
     padding-top: 68px;
