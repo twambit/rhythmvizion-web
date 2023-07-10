@@ -44,7 +44,7 @@ src="https://www.youtube.com/embed/lWe_Bl0k6TA" allowFullScreen
     >
 </iframe>
   </span>
-
+ </div>
      <div className="hero-figure">
               <img
 
@@ -52,7 +52,7 @@ src="https://www.youtube.com/embed/lWe_Bl0k6TA" allowFullScreen
                 alt=""
               />
             </div>
-                    </div>
+                   
     <div className="vidclassclear" />
           </div>
         </div>
