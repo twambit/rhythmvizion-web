@@ -1559,6 +1559,7 @@ label {
     clear: left;
 }
 .vidclassleft {
+    margin:0;
     width: 50%;
 float: left;
 }
