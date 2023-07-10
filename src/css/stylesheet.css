@@ -1555,6 +1555,9 @@ label {
   min-width: 100%;
 }
 
+.vidclassclear {
+    clear: left;
+}
 .vidclassleft {
     width: 50%;
 float: left;
