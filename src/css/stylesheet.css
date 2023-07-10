@@ -1556,10 +1556,12 @@ label {
 }
 
 .vidclassleft {
+    width: 50%;
 float: left;
 }
 
 .vidclassright {
+      width: 50%;
 float: left;
 }
 
