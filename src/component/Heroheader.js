@@ -30,7 +30,7 @@ export const Hero = () => {
               </div>
             </div>
             <div className="hero-figure">
-                <div style="float: left">
+                <div className="vidclass">
                 <iframe width="420" height="315"
 src="https://www.youtube.com/embed/QZuQ_ERpqss" allowFullScreen align="left"
     >
