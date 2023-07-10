@@ -7,6 +7,23 @@ export const Hero = () => {
         <div className="container">
           <div className="hero-inner">
             <div className="hero-copy">
+              <div className="main_block">
+                <span className="vidclassleft">
+                <iframe width="400" height="315"
+src="https://www.youtube.com/embed/QZuQ_ERpqss" allowFullScreen
+    >
+  
+</iframe>
+    </span>
+    <span className="vidclassleft">
+              <iframe width="400" height="315"
+src="https://www.youtube.com/embed/lWe_Bl0k6TA" allowFullScreen
+    >
+</iframe>
+  </span>
+ </div>   
+  <div className="vidclassclear" />
+  
               <h1 className="hero-title mt-0">
                 RHYTHM VIZION SOUND{" "}
                 <span className="hero-title-span">ACTIVATED GLASSES</span>
@@ -30,22 +47,7 @@ export const Hero = () => {
               </div>
             </div>
          
-          <div className="main_block">
-                <span className="vidclassleft">
-                <iframe width="400" height="315"
-src="https://www.youtube.com/embed/QZuQ_ERpqss" allowFullScreen
-    >
-  
-</iframe>
-    </span>
-    <span className="vidclassleft">
-              <iframe width="400" height="315"
-src="https://www.youtube.com/embed/lWe_Bl0k6TA" allowFullScreen
-    >
-</iframe>
-  </span>
- </div>   
-  <div className="vidclassclear" />
+
      <div className="hero-figure">
               <img
 
