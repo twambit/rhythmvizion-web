@@ -1550,6 +1550,9 @@ label {
 
 /* Hero Header */
 
+.vidclass {
+float: left;
+}
 .hero {
     text-align: center;
     padding-top: 68px;
