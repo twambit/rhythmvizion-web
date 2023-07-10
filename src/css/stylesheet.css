@@ -1551,7 +1551,7 @@ label {
 /* Hero Header */
 
 .main_block {
-  display: inline-block;
+  display: block;
   min-width: 100%;
 }
 
@@ -1560,7 +1560,6 @@ label {
 }
 .vidclassleft {
     margin:0;
-    width: 50%;
 float: left;
 }
 
