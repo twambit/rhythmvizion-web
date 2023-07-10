@@ -31,16 +31,18 @@ export const Hero = () => {
             </div>
             <div className="hero-figure">
                 <div className="main_block">
-                <div className="vidclassleft">
+                <span className="vidclassleft">
                 <iframe width="420" height="315"
 src="https://www.youtube.com/embed/QZuQ_ERpqss" allowFullScreen
     >
+    </span>
 </iframe>
+    <span className="vidclassleft">
               <iframe width="420" height="315"
 src="https://www.youtube.com/embed/lWe_Bl0k6TA" allowFullScreen
     >
 </iframe>
-  </div>
+  </span>
   </div>
               <img
 
