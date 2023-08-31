@@ -78,11 +78,11 @@ export const Header = () => {
                 </li>
               </ul>
             </div>
-            <div className="btnclass">
+            {/* <div className="btnclass">
               <a href="#" className="btn btn-header">
                 Subscribe Now
               </a>
-            </div>
+            </div> */}
           </nav>
         </div>
       </div>
