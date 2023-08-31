@@ -41,24 +41,32 @@ module.exports = {
       }
     ]
   },
+  // devServer: {
+
+  //   // Serve index.html as the base
+  //  contentBase: path.join(__dirname, "public"),
+
+  //   // Enable compression
+  //   //compress: true,
+
+  //   // Enable hot reloading
+  //   hot: true,
+
+  //   //host:'localhost',
+
+  //   port: 3000
+
+  //   // Public path is root of content base
+  //   //publicPath: '/public',
+
+  // },
   devServer: {
+    static: {
+      directory: path.join(__dirname, "public")
+    },
 
-    // Serve index.html as the base
-   contentBase: path.join(__dirname, "public"),
-
-    // Enable compression
-    //compress: true,
-
-    // Enable hot reloading
-    hot: true,
-
-    //host:'localhost',
-
-    port: 3000
-
-    // Public path is root of content base
-    //publicPath: '/public',
-
+    compress: true,
+    port: 3010, // default 8000
   },
   plugins: [
     new HtmlWebpackPlugin({

@@ -1963,3 +1963,15 @@ main {
     color: #000;
     border-radius: 30px;
 }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+  }
+  
+  .image-container img {
+    max-width: 50%;
+    max-height: 50%;
+  }

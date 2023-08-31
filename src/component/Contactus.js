@@ -50,11 +50,13 @@ export const Contactus = () => {
             <span>+1 917-574-4910</span>
           </li>  */}
           <li className="flex-item">
+    
             <i className="fa fa-envelope-o" aria-hidden="true"></i>
             <br />
             <b>Email</b>
             <br />
             <span>rhythmvizion@gmail.com</span>
+            <div className="image-container"><img src="./images/OriusNexa-RhythmVizionAI.jpg"/></div> 
           </li>
           {/* <li className="flex-item">
             <i className="fa fa-map-marker" aria-hidden="true"></i>

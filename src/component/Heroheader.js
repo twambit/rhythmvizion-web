@@ -10,17 +10,11 @@ export const Hero = () => {
               <div className="main_block">
                 <span className="vidclassleft">
                 <iframe width="400" height="315"
-src="https://www.youtube.com/embed/QZuQ_ERpqss" allowFullScreen
+src="https://www.youtube.com/embed/uOZY1bRgaqc" allowFullScreen
     >
   
 </iframe>
     </span>
-    <span className="vidclassleft">
-              <iframe width="400" height="315"
-src="https://www.youtube.com/embed/lWe_Bl0k6TA" allowFullScreen
-    >
-</iframe>
-  </span>
  </div>   
   <div className="vidclassclear" />
   
@@ -35,7 +29,7 @@ src="https://www.youtube.com/embed/lWe_Bl0k6TA" allowFullScreen
                 {/* <a className="social-head" href="https://www.instagram.com/rhythmvizion/">
                   <i className="fa fa-facebook-square" aria-hidden="true"></i>
                 </a> */}
-                <a className="social-head" href="https://www.instagram.com/rhythmvizion/">
+                <a className="social-head" href="https://www.instagram.com/rhythmvizionai/">
                   <i className="fa fa-instagram" aria-hidden="true"></i>
                 </a>
                 {/* <a className="social-head" href="#">
