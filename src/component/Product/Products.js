@@ -8,10 +8,10 @@ export const Products = () => {
           <h4>Demo Videos</h4>
           </div>
           <div className="image-container-display">
-            <span className="image-container-display"><img src="./images/redstoredisplay.jpg"/></span> 
-            <span className="image-container-display"><img src="./images/whtstoredisplay.jpg"/></span> 
-            <span className="image-container-display"><img src="./images/greenstoredisplay.jpg"/></span> 
-            <span className="image-container-display"><img src="./images/colorstoredisplay.jpg"/></span> 
+            <span className="image-container-display"><img src="https://www.rhythmvizion.com/images/redstoredisplay.jpg"/></span> 
+            <span className="image-container-display"><img src="https://www.rhythmvizion.com/images/whtstoredisplay.jpg"/></span> 
+            <span className="image-container-display"><img src="https://www.rhythmvizion.com/images/greenstoredisplay.jpg"/></span> 
+            <span className="image-container-display"><img src="https://www.rhythmvizion.com/images/colorstoredisplay.jpg"/></span> 
             </div>
             <div className="video-container-display">
             <span>

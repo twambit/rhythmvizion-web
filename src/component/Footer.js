@@ -17,7 +17,7 @@ export const Footer = () => {
             <a href="/">
               <img
                 className="header-logo-image"
-                src={"./images/RythmLogoWhite.png"}
+                src={"/images/RythmLogoWhite.png"}
                 alt="Logo"
               />
             </a>

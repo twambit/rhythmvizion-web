@@ -33,7 +33,7 @@ export const Header = () => {
           <nav className="navigation">
             <a href="/" className="brand-name">
               <img
-                src={"./images/RythmLogoWhite.png"}
+                src={"/images/RythmLogoWhite.png"}
                 alt="logo"
               />
             </a>
