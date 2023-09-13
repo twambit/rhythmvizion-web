@@ -72,7 +72,7 @@ export const CustomerActions = () => {
       console.log(data);
     }
   }, []);
- 
+
   const updateState = (index) => (e) => {
     const newArray = updata.map((item, i) => {
       if (index === i) {
@@ -108,8 +108,26 @@ export const CustomerActions = () => {
       });
   };
 
-
-
+  /* Delete  */
+  function Delete_custdata() {
+    if (window.confirm('Are you certain you want to delete?')) {
+      const urlpluspara = "http://localhost:5000/api/customers/" + datapara.id;
+      axios.delete(urlpluspara).then((response) => {
+        navigate("../../customerlist");
+      })
+        .catch((error) => {
+          if (error.response) {
+            console.log(error.response);
+            console.log("server responded");
+          } else if (error.request) {
+            console.log("network error");
+          } else {
+            console.log(error);
+          }
+          alert("Some Error Occured!");
+        });
+    }
+  }
   return (
     <>
       <Header />
@@ -165,7 +183,13 @@ export const CustomerActions = () => {
                     <label htmlFor="notes">Notes</label>
                     <input id="notes" name="notes" maxLength="5000" value={updatas.notes} onChange={updateState(index)} />
                   </div>
-                  <button type="submit">{datapara.actionname}</button>
+                  <div className="cards">
+                    <div className="card">
+                      <button type="submit">{datapara.actionname}</button>
+                    </div>
+                    <div className="card">
+                      <button type="submit" onClick={() => Delete_custdata()}>Delete</button></div>
+                  </div>
                 </form>
               ))}
             </div>
