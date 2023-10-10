@@ -5,8 +5,23 @@ import { Link } from 'react-router-dom'
 
 export const Header = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [showlogin, setlogin] = useState(true);
+  const [showloginuser, setloginuser] = useState(false);
 
   const hash = window.location.hash;
+
+  useEffect(() => {
+
+    var loginuser = sessionStorage.getItem("loginuser");
+    if (!(loginuser == null)) {
+      setlogin(false);
+      setloginuser(true);
+    }
+    else{
+      setlogin(true);
+      setloginuser(false);
+    }
+  }, []);
 
   useEffect(() => {
     switch (hash) {
@@ -76,6 +91,16 @@ export const Header = () => {
                 <li>
                   <Link to="/#conatct-us" onClick={scrollToTestContact}>Contact</Link>
                 </li>
+                {showlogin ? (
+                <li className="header_login_btn">
+                  <Link  to="../Login">Login</Link>
+                </li>
+                ) : null}
+                {showloginuser ? (
+                <li className="header_login_btn">
+                  <Link  to="../dashboard">Dashboard</Link>
+                </li>
+                ) : null}
               </ul>
             </div>
             {/* <div className="btnclass">
