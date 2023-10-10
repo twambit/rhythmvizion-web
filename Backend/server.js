@@ -1,34 +1,58 @@
-const dotenv = require("dotenv").config();
 const express = require("express");
-const cors = require("cors");
-const bodyParser = require("body-parser");
-const sendEmail = require("./utils/sendEmail");
-
+const { Server } = require("socket.io");
 const app = express();
+const helmet = require("helmet");
+const cors = require("cors");
+const authRouter = require("./routers/authrouter");
+const CustomerRouter = require("./routers/customerrouter");
+const session = require("express-session");
+const server = require("http").createServer(app);
+const bodyParser = require('body-parser');
 
-// Middleware
+require("dotenv").config();
+
+const io = new Server(server, {
+  cors: {
+    origin: "http://localhost:3000",
+    credentials: "true",
+  },
+});
+
+app.use(helmet());
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    credentials: true,
+  })
+);
 app.use(express.json());
+// Configuring body parser middleware
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors());
+app.use(
+  session({
+    secret: process.env.COOKIE_SECRET,
+    credentials: true,
+    name: "sid",
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      secure: process.env.ENVIRONMENT === "production" ? "true" : "auto",
+      httpOnly: true,
+      expires: 1000 * 60 * 60 * 24 * 7,
+      sameSite: process.env.ENVIRONMENT === "production" ? "none" : "lax",
+    },
+  })
+);
+app.use("/auth", authRouter);
 
-// Route
-app.get("/", (req, res) => {
-  res.send("Home Page");
-});
+app.use("/api", CustomerRouter);
 
-app.post("/api/sendEmail", async (req, res, next) => {
-  const { yourname, youremail,yoursubject, yourmessage } = req.body;
-  try {
-    await sendEmail(yourname, youremail,yoursubject, yourmessage);
-    
-    res.send("Message Successfully Sent!");
-  } catch (error) {
-    res.send("Message Could not be Sent");
-  }
-});
+io.on("connect", socket => {});
+
+// const PORT = process.env.PORT || 5000;
 
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}...`);
+server.listen(5000, () => {
+  console.log(`Server is running on port 5000`);
 });
